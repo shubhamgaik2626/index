@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WPD Feedback Form</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: darkblue;
+        }
+        form {
+            background-color: #e6ffff;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MET Bhujbal Knowledge City</h1>
+    <h2 align="center">WPD FEEDBACK FORM</h2>
+    <form>
+        <label for="feedback">FEEDBACK FOR WPD:</label>
+        <input type="text" id="feedback" name="feedback">
+
+        <h3>PLEASE NOTE DOWN YOUR VIEW</h3>
+
+        <label for="fname">FIRST NAME:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">LAST NAME:</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="address">ADDRESS:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="email">EMAIL ID:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="dob">DATE OF BIRTH:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label>GENDER:</label>
+        <input type="radio" id="male" name="gender" value="male"> MALE<br>
+        <input type="radio" id="female" name="gender" value="female"> FEMALE<br>
+        <input type="radio" id="notspecified" name="gender" value="notspecified"> NOT SPECIFIED<br>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical-23_RWD Template</title>
+    <style>
+        /* Base styles for the layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            background-color: powderblue;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 20px;
+        }
+
+        .box img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .box h3 {
+            margin-top: 30px;
+        }
+
+        .footer{
+            background-color:#0099cc;
+            color:#ffffff;
+            text-align:center;
+            font-size:12px;
+            padding:15px;           
+        }
+        .main {
+            text-align: center;
+        }
+
+        .marq {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .MET {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            padding-bottom: 10px;
+        }
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header {
+                font-size: 18px;
+            }
+
+            .box h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <marquee class="marq" bgcolor="Red"
+                 direction="left" loop="">
+            <div class="MET">
+                MET BKC IOT Poly IT Department
+            </div>
+            <div class="MET1">
+                Created By: Mr. Chetan S. Mogare (8668640288)
+            </div>
+        </marquee>
+    </div>
+    <header>
+        <h1>Responsive Web Design Template</h1>
+    </header>
+
+    <nav>
+        <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/">MET Poly</a>
+        <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/information-technology/">IT Dept.</a>
+        <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/it-vision-mission/"> Dept. Vision</a>
+        <a href="https://metbhujbalknowledgecity.ac.in/metpoly/it-faculty/">Staff</a>
+    </nav>
+
+    <div class="container">
+        <section class="grid">
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQahQEJ7aGvVVTFHuWFKyJHsTdpaL03GCfVKA&s" alt="Not found Image">
+                <h3>Sem 1</h3>
+                <p>
+                    <ul>
+                        <li>ICT</li>
+                        <li>Science</li>
+                        <li>Maths</li>
+                        <li>WPC</li>
+                        <li>ENG</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQay_XnZLpvAEvgkScAo7zeaavJQj3Sr7eQgA&s" alt="Not found Image">
+                <h3>Sem 2</h3>
+                <p>
+                    <ol>
+                        <li><div class="box"><a target="_parent" href="Practical 24Marq.html">WPD</a> </div></li>
+                        <li>Maths</li>
+                        <li>PCO</li>
+                        <li>PIC</li>
+                        <li>BEE</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEBAYWCjQWIv7kn2x9-8AG4zD-k57K225RaA&s" alt="Not found Image">
+                <h3>Sem 3</h3>
+                <p>
+                    <ul type="square">
+                        <li>DTM</li>
+                        <li>DMS</li>
+                        <li>OOP</li>
+                        <li>DSU</li>
+                        <li>EIC</li>
+                        <li>AMT</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+
+    </div>
+    <div class="footer">
+        <h1>Resize the browser window to see how the content respond to the resizing.</h1>
+    </div>
+</body>
+</html>
