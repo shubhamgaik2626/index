@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio of All Practicals</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    nav {
+      background-color:#0d6efd;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 14px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e0e0e0;
+      color: #1a1a2e;
+      border-radius: 6px;
+    }
+
+    .main {
+      text-align: center;
+      background-color: #ffc107;
+      padding: 20px 10px;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .main .MET {
+      font-size: 28px;
+    }
+
+    .container {
+      flex: 1;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .box {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+    }
+
+    .box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .box h3 {
+      color: #0d6efd;
+      margin: 20px;
+    }
+
+    .box ul {
+      padding: 0 20px 20px 40px;
+    }
+
+    .box ul li {
+      margin-bottom: 10px;
+      list-style: square;
+    }
+
+    .box a {
+      text-decoration: none;
+      color: #1a1a2e;
+    }
+
+    .box a:hover {
+      color: #0d6efd;
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .main .MET {
+        font-size: 22px;
+      }
+
+      .box h3 {
+        font-size: 20px;
+      }
+
+      .footer h1 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="MET">MET BKC IOT Polytechnic - IT Department</div>
+    <div class="MET1">Created By: Mr. Shubham Sanjay Gaikwad</div>
+  </div>
+
+  <header>
+    <h1>Practicals Learned in Web Page Designing</h1>
+  </header>
+
+  <nav>
+    <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/">MET Poly</a>
+    <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/information-technology/">IT Dept.</a>
+    <a target="_blank" href="https://metbhujbalknowledgecity.ac.in/metpoly/it-vision-mission/">Dept. Vision</a>
+    <a href="https://metbhujbalknowledgecity.ac.in/metpoly/it-faculty/">Staff</a>
+  </nav>
+
+  <div class="container">
+    <section class="grid">
+
+      <!-- Box 1 -->
+      <div class="box">
+        <img src="https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1694162055256-Topic%20%2814%29.jpg" alt="HTML Basics">
+        <h3>Introduction to HTML</h3>
+        <ul>
+          <li><a href="practical no 1.html">Practical no 1 - Basic HTML tags</a></li>
+          <li><a href="practical no 2.html">Practical no 2 - Heading tags</a></li>
+          <li><a href="practical no 3.html">Practical no 3 - Paragraph in web page</a></li>
+          <li><a href="practical no 4.html">Practical no 4 - Block level tags</a></li>
+          <li><a href="practical no 5.html">Practical no 5 - Text level tag</a></li>
+          <li><a href="practical no 6.html">Practical no 6 - Border Properties</a></li>
+          <li><a href="practical no 7.html">Practical no 7 - Special characters</a></li>
+        </ul>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplFK9Ewt2mA6KxArmdqGUZsM39RehrmL3mg&s" alt="Lists and Links">
+        <h3>Lists and Links</h3>
+        <ul>
+          <li><a href="practical no 8.html">Practical no 8 - Ordered and Unordered List</a></li>
+          <li><a href="practical no 9.html">Practical no 9 - Different types of list</a></li>
+          <li><a href="practical no 10.html">Practical no 10 - Web page link</a></li>
+          <li><a href="practical no 11.html">Practical no 11 - Links in web page</a></li>
+          <li><a href="practical no 12.html">Practical no 12 - Links with images</a></li>
+          <li><a href="practical no 13.html">Practical no 13 - Colors for links</a></li>
+        </ul>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="box">
+        <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/12/HTML-Colors-.png" alt="Colors and Background">
+        <h3>Images, Colors and Background</h3>
+        <ul>
+          <li><a href="practical no 14.html">Practical no 14 - Foreground & background image</a></li>
+          <li><a href="practical no 15.html">Practical no 15 - Image with hyperlink</a></li>
+          <li><a href="practical no 16.html">Practical no 16 - Background properties</a></li>
+        </ul>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="box">
+        <img src="https://trainings.internshala.com/blog/wp-content/uploads/2023/07/Frames-in-html-1.jpg" alt="Tables and Forms">
+        <h3>Tables, Frames and Forms</h3>
+        <ul>
+          <li><a href="practical no 17.html">Practical no 17 - Table in web page</a></li>
+          <li><a href="practical no 18.html">Practical no 18 - Nested tables & images</a></li>
+          <li><a href="practical no 19.html">Practical no 19 - Table attributes</a></li>
+          <li><a href="practical no 20.html">Practical no 20 - Frames</a></li>
+          <li><a href="practical no 21.html">Practical no 21 - HTML Forms</a></li>
+        </ul>
+      </div>
+
+      <!-- Box 5 -->
+      <div class="box">
+        <img src="https://miro.medium.com/v2/resize:fit:960/1*OlyP02fRFe8pEkJgb6vGTQ.png" alt="CSS Styles">
+        <h3>Cascading Style Sheets</h3>
+        <ul>
+          <li><a href="practical no 22.html">Practical no 22 - Applying style sheets</a></li>
+          <li><a href="practical no 23.html">Practical no 23 - Responsive templates</a></li>
+          <li><a href="practical no 24.html">Practical no 24 - Hosting website</a></li>
+          <li><a href="practical no 25.html">Practical no 25 - Portfolio website</a></li>
+        </ul>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="footer">
+    <h1>Resize the browser window to see how the content responds to resizing.</h1>
+  </div>
+
+</body>
+</html>
